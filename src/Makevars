@@ -7,7 +7,7 @@ PKG_CPPFLAGS = -I/usr/local/include -fdefault-real-8
 
 
 HANDLE_ERR.o: HANDLE_ERR.f90
-$(F90) HANDLE_ERR.f90 $(nf-config --flibs ...)
+	$(F90) HANDLE_ERR.f90 $(nf-config --flibs ...)
 
 #HANDLE_ERR.o: HANDLE_ERR.f90
 	#$(F90) $(PKG_CPPFLAGS) -c HANDLE_ERR.f90
