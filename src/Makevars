@@ -1,7 +1,7 @@
 
 F90 =gfortran
-PKG_CPPFLAGS =  -fdefault-real-8
-PKG_LIBS = -L/usr/local/Cellar/netcdf/4.6.0/lib -lnetcdff -shared
+PKG_CPPFLAGS = /usr/local/include -fdefault-real-8
+#PKG_LIBS = -L/usr/local/Cellar/netcdf/4.6.0/lib -lnetcdff -shared
 
 
 HANDLE_ERR.o: HANDLE_ERR.f90
