@@ -1,9 +1,7 @@
 # R for travis: see documentation at https://docs.travis-ci.com/user/languages/r
 #os: osx
 
-before_install:
-	chmod +x install_netcdf.sh 
-	./install_netcdf.sh
+script: chmod +x install_netcdf.sh && ./install_netcdf.sh
 
 language: R
 sudo: false
@@ -17,5 +15,3 @@ cache: packages
 #      - libhdf5-dev
 #brew_packages:
 #  netcdf
-
-
