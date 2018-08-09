@@ -2,7 +2,7 @@
 #!/bin/bash
 
 # install netcdf at known location in travis ubuntu environment.
-NFDIR=/travis/local #make sure its in the default location...
+#NFDIR=/travis/local #make sure its in the default location...
 
 # basis for the below was found here: https://gist.github.com/perrette/cd815d03830b53e24c82
 
