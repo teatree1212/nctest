@@ -1,5 +1,9 @@
 # R for travis: see documentation at https://docs.travis-ci.com/user/languages/r
-os: osx
+#os: osx
+
+before_install:
+	chmod +x install_netcdf.sh 
+	./install_netcdf.sh
 
 language: R
 sudo: false
@@ -11,5 +15,7 @@ cache: packages
 #      - libnetcdf-dev
 #      - netcdf-bin # libnetcdf-dev doesn't contain nc-config in ubuntu 12.04 (in 16.04 it is part of libnetcdf-dev)
 #      - libhdf5-dev
-brew_packages:
-  netcdf
+#brew_packages:
+#  netcdf
+
+

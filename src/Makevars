@@ -1,9 +1,9 @@
 
 F90 =gfortran
 
-PKG_CPPFLAGS = -I/usr/local/Cellar/netcdf/4.6.0/include  #$(nf-config --flibs )  # trying to get the netcdf library path..
+PKG_CPPFLAGS = -I/travis/local/include  # trying to get the netcdf library path..
 
-#PKG_LIBS = -L/usr/local/Cellar/netcdf/4.6.0/lib -lnetcdff -shared
+PKG_LIBS = -L/travis/local -lnetcdff -shared
 
 
 HANDLE_ERR.o: HANDLE_ERR.f90
